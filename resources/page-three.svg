@@ -1,0 +1,12 @@
+<!-- resources/page-three.svg -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Define the path for the circle to follow -->
+    <path id="path" d="M 50,50 L 150,50 L 150,150 L 50,150 Z" fill="none" stroke="black"/>
+
+    <!-- Define the animated circle -->
+    <circle r="10" fill="red">
+        <animateMotion repeatCount="indefinite" dur="4s" keyPoints="0;0.25;0.5;0.75;1" keyTimes="0;0.25;0.5;0.75;1">
+            <mpath href="#path"/>
+        </animateMotion>
+    </circle>
+</svg>
