@@ -1,5 +1,9 @@
 /* styles.css */
 
+html {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 h1 {
     text-shadow: 2px 2px pink;
 }
@@ -9,25 +13,36 @@ h2 {
 }
 
 body {
-    font-family: Helvetica, sans-serif;
     font-size: 16px;
     margin: 10px;
     padding: 10px;
 }
 
+.menue ul {
+    padding: 10px 10px 10px 40px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: purple;
+    background-color: rgb(247, 232, 237);
+    width: fit-content;
+    list-style-position: inside;
+}
+
 /* style type for unordered list */
 @counter-style custom-unordered {
-    system: cyclic;
-    symbols:  '❓' '✌️' '❤️' ;
+    system: finite;
+    symbols: '🏠' '☝️' '✌️' ;
     suffix: ' ';
 }
 
-li {
+.menue li {
     list-style: custom-unordered;
+    transition: all 0.3s ease;
 }
 
 a {
-    font-family: Arial, sans-serif; /* Change the font */
+    font-family: Helvetica, Arial, sans-serif, sans-serif; /* Change the font */
     font-size: 16px; /* Adjust the font size if needed */
     font-weight: bold; /* Make the font bold, if desired */
 }
@@ -71,6 +86,7 @@ pre  {
 caption {
     font-size: 25px;
     text-align: center;
+    padding: 10px;
 }
 
 table {
@@ -101,10 +117,9 @@ table {
     background-color: rgb(247, 241, 241);
   }
   
-  caption {
-    padding: 10px;
+  footer {
+    color: gray;
   }
-
 
 
   

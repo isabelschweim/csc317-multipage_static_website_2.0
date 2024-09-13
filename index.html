@@ -5,12 +5,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"> 
-</head>
-
+  <title>My First Multipage Static Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  
 <!-- Banner Image (SVG) -->
 <!-- Example SVG elements -->
-<body>
+
   <!--
   <svg width="100%" height="300" xmlns="http://www.w3.org/2000/svg">
       <circle cx="50" cy="50" r="40" fill="lightblue" />
@@ -20,60 +22,69 @@
   -->
   
 <!-- Navigation Menu -->
-<nav class="menue">
-  <ul>
-    <li id="0"><a href="./index.html"> Home </a></li>
-    <li id="1"><a href="./views/two.html"> Page Two</a></li>
-    <li id="2"><a href="./views/three.html"> Page Three</a></li>
-  </ul>
-</nav>
+  <nav class="menue">
+    <ul>
+      <li id="0"><a href="./index.html"> Home </a></li>
+      <li id="1"><a href="./views/two.html"> Page Two</a></li>
+      <li id="2"><a href="./views/three.html"> Page Three</a></li>
+    </ul>
+  </nav>
 
-<h1> Assigment 2 </h1>
+</head>
 
-<!-- CSS Section -->
-<h2 class=""css-question"> How to Apply CSS to HTML </h2>
 
-<p class="css-questions"> 
-  To include an <b>external</b> CSS file in an HTML file, use the 
-  <code>&lt;link&gt;</code> element within the <code>&lt;head&gt;</code> 
-  section of your HTML. Here is an example:
+<body>
+  <h1> Assigment 2 </h1>
 
-  <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre><br>
+  <!-- CSS Section -->
+  <h2 class=""css-question"> How to Apply CSS to HTML </h2>
 
-  The <code>href</code> attribute of the <code>&lt;link&gt;</code> element 
-  needs to reference a file on your file system. In the example above, 
-  the CSS file is in the same folder as the HTML document, but you could 
-  place it somewhere else and adjust the path.
- </p>
+  <p class="css-questions"> 
+    To include an <b>external</b> CSS file in an HTML file, use the 
+    <code>&lt;link&gt;</code> element within the <code>&lt;head&gt;</code> 
+    section of your HTML. Here is an example:
 
-<!-- JS Section -->
-<h2 class="js-question"> How to Use JavaScript in a Webpage </h2>
+    <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre><br>
 
-<p class="js-question">
-  To link to an <b>external</b> JavaScript file, use the 
-  <code>&lt;script&gt;</code> element within the 
-  <code>&lt;body&gt;</code> or <code>&lt;head&gt;</code> section of your 
-  HTML with an <code>src</code> attribute pointing to the script file, 
-  using its URL: 
+    The <code>href</code> attribute of the <code>&lt;link&gt;</code> element 
+    needs to reference a file on your file system. In the example above, 
+    the CSS file is in the same folder as the HTML document, but you could 
+    place it somewhere else and adjust the path.
+  </p>
 
-  <pre><code class="extra">&lt;script src="path/to/my/script.js"&gt;&lt;/script&gt;</code></pre>
-  
-  To include JavaScript code directly in an <code>html</code> file, use the 
-  <code>&lt;script&gt;</code> element with the JavaScript code inside it 
-  without providing an <code>src</code> attribute.
-  <br>
+  <!-- JS Section -->
+  <h2 class="js-question"> How to Use JavaScript in a Webpage </h2>
 
-  Examples:
-  <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
-  <pre><code>&lt;script&gt;console.log('Hello, world!');&lt;/script&gt;</code></pre>
-  <pre><code>&lt;script&gt;
-    window.addEventListener("load", () => {
-      console.log("This function is executed once the page is fully loaded");
-    }); &lt;
-  /script&gt;</code></pre>
+  <p class="js-question">
+    To link to an <b>external</b> JavaScript file, use the 
+    <code>&lt;script&gt;</code> element within the 
+    <code>&lt;body&gt;</code> or <code>&lt;head&gt;</code> section of your 
+    HTML with an <code>src</code> attribute pointing to the script file, 
+    using its URL: 
 
-  It is convenient when you just need a small bit of JavaScript.
-</p>
+    <pre><code class="extra">&lt;script src="path/to/my/script.js"&gt;&lt;/script&gt;</code></pre>
+    
+    To include JavaScript code directly in an <code>html</code> file, use the 
+    <code>&lt;script&gt;</code> element with the JavaScript code inside it 
+    without providing an <code>src</code> attribute.
+    <br>
+
+    Examples:
+    <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+    <pre><code>&lt;script&gt;console.log('Hello, world!');&lt;/script&gt;</code></pre>
+    <pre><code>&lt;script&gt;
+      window.addEventListener("load", () => {
+        console.log("This function is executed once the page is fully loaded");
+      }); &lt;
+    /script&gt;</code></pre>
+
+    It is convenient when you just need a small bit of JavaScript.
+  </p>
+
+  <footer>
+    <p>Author: Isabel Schweim for CSC 317 at San Francisco State University</p>
+  </footer>
 
 </body>
+
 </html>
